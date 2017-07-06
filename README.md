@@ -4,21 +4,16 @@ Composer package for implementing FezVrasta's bootstrap material design in Yii2
 INSTALLATION
 ------------
 
-1. Clone this repo 
-
+~~~
+composer require "marcelodeandrade/yii2-bootstrap-material-design:dev-master"
 ~~~
 
-INSTALLATION
+CONFIGURATION
 ------------
 
-1. Clone this repo 
-
-~~~
-git clone https://github.com/marcelodeandrade/yii2-basic-bootstrap-material-design.git
-~~~
-
-2. Run and update dependencies with composer 
-
+In `AppAsset.php` add a new Asset dependecy:
 ```
-composer update  
+public $depends = [
+    'marcelodeandrade\material\BootstrapMaterialDesignInitAsset'
+];
 ```
